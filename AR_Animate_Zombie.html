@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<!--Code an animation with the a Sprite Sheet that has different pictures of a
+character.   Push the pictures into an array. Loop and draw each image one after another-->
+
+
+<html>
+<head>
+  <title>Animate Zombie</title>
+</head>
+<body>
+  <canvas id="canvas" width="640" height="480"></canvas>
+  <script>
+    var canvas = document.getElementById("canvas");
+    var ctx = canvas.getContext("2d");
+    
+    //canvas.width = window.innerWidth;
+	//canvas.height = window.innerHeight;
+
+//create empty array
+var images = [];
+images.length = 10;
+
+//push the images into array
+
+for(var i = 1 ; i < images.length ; i++){
+    images[i] = new Image();
+    images[i].src = 'Walk (' + i.toString() + ').png';
+}
+
+//loop and draw the images
+var i = 1;
+setInterval(function(){
+    i++;
+    if( i >= 10){
+        i = 1;
+    }
+    ctx.drawImage(images[i],100,100,300,300);
+},100)
+
+</script>
+</body>
+</html>
