@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Classes of animals on Wataty island</title>
+</head>
+<body>
+
+<h1> Wataty Island Animal Classes </h1>
+<p> Animals in Wataty </p>
+<p> 3 common classes of animals in Wataty</p>
+<p> There are no insects in Wataty as a common tree's sap in Wataty kills insects</p>
+
+<p id="demo"></p>
+<p id="mammals1"></p>
+<p id= "mammals2"></p>
+<p id= "mammals3"></p>
+<p id= "mammals4"></p>
+<p id= "mammals5"></p>
+<p id= "birds"></p>
+<p id= "reptiles"></p>
+
+<script>
+class Animal_mammals {
+    constructor (name, rarity,nature) {
+        this.name = name;
+        this.rarity = rarity;
+        this.nature = nature;
+    }
+}
+
+class Animal_birds {
+    constructor (name, rarity , nature) {
+        this.name = name;
+        this.rarity = rarity;
+        this.nature = nature;
+    }
+} 
+
+class Animal_reptiles {
+    constructor (name, rarity , nature) {
+        this.name = name;
+        this.rarity = rarity;
+        this.nature = nature;
+    }
+} 
+
+
+const Anando_monkey = new Animal_mammals ("Anando monkey"," common", "They are known to steal fruit from local farmers, hence it is common to see a troop of them in a farm. However they help farmers rear their animals");
+
+document.getElementById("mammals1").innerHTML = Anando_monkey.name + " " + Anando_monkey.rarity + " " + Anando_monkey.nature;
+
+/*
+Error in identifier ... there should not be a space
+
+let Aranbeh_monkey = new Animal_mammals ("Aranbeh_monkey"," uncommon" ,"Aranbeh_monkey's used to number in the millions, but when humans arrived at the island, many were killed for food. The Wataty animal force has made sure that no more monkeys were hunted, and most of the population has recovered.");
+
+document.getElementById("mammals2").innerHTML =
+Aranbeh monkey.name + " " + Aranbeh monkey.rarity + " " + Aranbeh monkey.nature;
+
+const Brown nailed sloth = new Animal_mammals ("Brown nailed sloth", "rare","Brown nailed sloths take about one and a half years to give birth, and can only have two babies per lifetime, thus there are only about 10,000 in the island. They were first discovered by Lord Tatati, a native lord that was born during the early 19th century while hunting for Qunaconli parrots。");
+document.getElementById("mammals3").innerHTML =
+Brown nailed sloth.name + " " + Brown nailed sloth.rarity + " " + Brown nailed sloth .nature;
+
+const Cancolta deer = new Animal_mammals ("Cancolta deer", "very rare", "Cancolta deer were common until the conquerors from the Appsaied empire attacked. The soldiers did not have horses and used Cancolta deer instead. Every Cancolta deer was caught and used for battle. The Wataty army managed to defend Wataty but 90 % of the deer died and their population has never fully recovered from the losses.");
+
+document.getElementById("mammals4").innerHTML =
+Cancolta deer.name + " " + Cancolta deer.rarity + " " + Cancolta deer.nature;
+
+const Dung mole = new Animal_mammals ("Dung mole", "very common","Dung moles were used to clean junkyards untill 2013 when King Jongang Wataty stopped the practise. Dung moles eat poop from other animals and reproduce 4 times a year. The largest litter ever from a dung moles was 23. Dung moles are the fastest reproducers, with over 200 million in Wataty itself, the largest animal population ever in Wataty.");
+
+document.getElementById("mammals5").innerHTML =
+Dung mole.name + " " + Dung mole.rarity + " "+ Dung mole.nature;
+*/
+</script>
+</body>
+</html>
